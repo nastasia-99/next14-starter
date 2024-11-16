@@ -1,9 +1,9 @@
 import styles from "./home.module.css";
 import Image from "next/image";
 
-const HomePage = () => {
+const Home = () => {
   return (
-    <div className={styles.contaier}>
+    <div className={styles.container}>
       <div className={styles.textContainer}>
         <h1 className={styles.title}>Creative Thoughts Agency.</h1>
         <p className={styles.desc}>
@@ -15,14 +15,14 @@ const HomePage = () => {
           <button className={styles.button}>Contact</button>
         </div>
         <div className={styles.brands}>
-          <Image src="/brands.png" alt="" fill className={styles.brandImg} />
+          <Image src="/brands.png" alt="Brand logos" fill className={styles.brandImg}/>
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <Image src="/hero.gif" alt="" fill className={styles.heroImg} />
+        <Image src="/hero.gif" alt="Hero image" fill className={styles.heroImg}/>
       </div>
     </div>
   );
 };
 
-export default HomePage;
+export default Home;
